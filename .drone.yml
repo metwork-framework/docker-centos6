@@ -1,6 +1,8 @@
 pipeline:
   docker:
     image: metwork/drone-docker-specific-image:latest
+    pull: true
+
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - /root:/root
