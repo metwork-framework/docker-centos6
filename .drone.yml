@@ -1,0 +1,13 @@
+pipeline:
+  docker:
+    image: metwork/drone-docker-specific-image:latest
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root:/root
+    commands:
+      - docker build -t metwork/centos6:latest .
+      - docker push metwork/centos6:latest
+    when:
+      event: push
+
+branches: [ master ]
