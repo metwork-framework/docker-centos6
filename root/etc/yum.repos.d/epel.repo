@@ -1,6 +1,6 @@
 [epel]
 name=Extra Packages for Enterprise Linux 6 - $basearch
-baseurl=https://archives.fedoraproject.org/pub/epel/6/x86_64
+baseurl=https://archives.fedoraproject.org/pub/archive/epel/6/x86_64/
 failovermethod=priority
 enabled=1
 gpgcheck=1
